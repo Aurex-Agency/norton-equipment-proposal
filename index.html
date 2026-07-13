@@ -82,13 +82,14 @@ header.nav{position:fixed;top:0;left:0;right:0;z-index:100;
   transition:background .4s var(--ease),border-color .4s,backdrop-filter .4s;
   border-bottom:1px solid transparent}
 header.nav.stuck{background:rgba(10,11,13,.82);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
+header.nav .wrap{max-width:1320px}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:clamp(18px,2.5vw,46px);height:74px}
 .brand{display:flex;align-items:center;gap:13px}
 .brand .badge{width:44px;height:auto;flex:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
 .brand .txt{display:flex;flex-direction:column;line-height:1}
 .brand .txt b{font-family:'Oswald',sans-serif;font-weight:600;font-size:15px;letter-spacing:.12em;color:var(--silver-hi);text-transform:uppercase}
 .brand .txt span{font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-top:3px}
-.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links{display:flex;align-items:center;gap:26px}
 .nav-links a{font-family:'Oswald',sans-serif;font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-2);position:relative;padding:4px 0;transition:color .3s}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--gold);transition:width .35s var(--ease)}
 .nav-links a:hover,.nav-links a.active{color:var(--silver-hi)}
@@ -404,7 +405,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--line);padding:54px 0 4
       <span class="ln"><span>as tough as the</span></span>
       <span class="ln"><span class="gold">equipment built to last.</span></span>
     </h1>
-    <p class="hero-sub">Norton Equipment sells, services, and refurbishes industrial recycling equipment built to last. This is the plan to turn that reputation into a 24/7 salesperson, and dominate search across <b style="color:var(--silver-hi)">Tennessee, Mississippi, Louisiana &amp; Arkansas</b>.</p>
+    <p class="hero-sub">Norton Equipment sells, services, and refurbishes industrial recycling equipment built to last. This is the plan to turn that reputation into a 24/7 salesperson, and own local search across the 100 miles Norton actually serves, from <b style="color:var(--silver-hi)">West Tennessee to North Mississippi &amp; East Arkansas</b>.</p>
     <div class="hero-cta">
       <a href="#opportunity" class="btn btn-gold" data-magnetic>See the Strategy <span class="arw">→</span></a>
       <a href="#investment" class="btn btn-ghost" data-magnetic>Jump to Investment</a>
@@ -421,7 +422,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--line);padding:54px 0 4
 <div class="stats">
   <div class="wrap">
     <div class="stats-grid">
-      <div class="stat reveal"><div class="num" data-count="4">0</div><div class="lab">States Covered<br>TN · MS · LA · AR</div></div>
+      <div class="stat reveal"><div class="num" data-count="100">0</div><div class="lab">Mile Service Radius<br>From Memphis</div></div>
       <div class="stat reveal" data-d="1"><div class="num" data-count="4">0</div><div class="lab">Business-Day<br>First Draft</div></div>
       <div class="stat reveal" data-d="2"><div class="num" data-count="5">0</div><div class="lab">SEO Articles<br>Included in Build</div></div>
       <div class="stat reveal" data-d="3"><div class="num" data-count="6">0</div><div class="lab">Target Cities<br>Ranked Locally</div></div>
@@ -445,7 +446,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--line);padding:54px 0 4
       <div class="opp-body reveal" data-d="1">
         <p class="lead">Norton Equipment Company specializes in selling, servicing, and refurbishing industrial recycling equipment built to last, earning a strong reputation across the Mid-South.</p>
         <p>However, the current website does not fully reflect that expertise, or capitalize on the extensive digital opportunities available in the industrial equipment sector.</p>
-        <p>This proposal outlines a comprehensive strategy to rebuild the website and implement a robust SEO campaign: enhancing user experience, building digital trust, and significantly increasing organic visibility to drive qualified leads for equipment sales, service, and refurbished machines across the four-state footprint.</p>
+        <p>This proposal outlines a comprehensive strategy to rebuild the website and implement a robust SEO campaign: enhancing user experience, building digital trust, and significantly increasing organic visibility to drive qualified leads for equipment sales, service, and refurbished machines across every market within 100 miles of Memphis.</p>
         <div class="gapbar">
           <div class="gaprow"><span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span><div><b>Build digital trust</b><small>Design and content that match Norton's real-world credibility.</small></div></div>
           <div class="gaprow"><span class="ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-4 4"/></svg></span><div><b>Increase organic visibility</b><small>Rank for the equipment and cities buyers actually search.</small></div></div>
@@ -490,7 +491,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--line);padding:54px 0 4
         <div class="phase-kick">Phase 02</div>
         <h2>Market Domination Layer</h2>
         <p>To outrank regional competitors, the site needs pages built for exactly how buyers search: by manufacturer, by model, and by city.</p>
-        <div class="phase-meta"><span class="k">4</span><span class="v">States · 6 cities<br>4 brand lines</span></div>
+        <div class="phase-meta"><span class="k">100</span><span class="v">Mile radius · 6 cities<br>4 brand lines</span></div>
       </div>
       <div class="flist">
         <div class="reveal">
@@ -500,14 +501,14 @@ footer{background:var(--ink-2);border-top:1px solid var(--line);padding:54px 0 4
           </div>
         </div>
         <div class="fitem reveal" data-d="1"><div class="idx">01</div><div><h3>Brand Landing Pages</h3><p>Dedicated, optimized pages for the lines Norton carries and services, including Marathon, Max-Pak, Cram-A-Lot, and Harris Selco, capturing buyers who search by manufacturer and model.</p></div></div>
-        <div class="fitem reveal" data-d="2"><div class="idx">02</div><div><h3>Location Landing Pages</h3><p>City-specific pages for key markets so Norton appears in "near me" and city-based searches across the four-state footprint.</p>
+        <div class="fitem reveal" data-d="2"><div class="idx">02</div><div><h3>Location Landing Pages</h3><p>City-specific pages for the towns inside Norton's real service area, so Norton shows up in "near me" and city-based searches within roughly 100 miles of Memphis.</p>
           <div class="cities">
-            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Memphis</span>
-            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Southaven</span>
-            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Olive Branch</span>
-            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Little Rock</span>
-            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Jackson</span>
-            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Nashville</span>
+            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Memphis, TN</span>
+            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Southaven, MS</span>
+            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Olive Branch, MS</span>
+            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>West Memphis, AR</span>
+            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Jackson, TN</span>
+            <span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Oxford, MS</span>
           </div>
         </div></div>
         <div class="fitem reveal" data-d="3"><div class="idx">03</div><div><h3>Advanced Schema Markup</h3><p>Structured data for Local Business, Organization, Product, and Service, so search engines and AI answer engines fully understand what Norton sells, services, and where.</p></div></div>
